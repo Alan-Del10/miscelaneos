@@ -34,7 +34,7 @@ class _PokemonView extends StatelessWidget {
           IconButton(
             onPressed: () {
               SharePlugin.shareLink(
-                'https://pokedex-deep-linking.com/pokedex/${pokemon.id}/',
+                'https://deeplinking-miscelaneos-webapp.firebaseapp.com/pokedex/${pokemon.id}/',
                 'Mira este Pokemon',
               );
             },

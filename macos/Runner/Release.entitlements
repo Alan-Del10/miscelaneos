@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:pokedex-deep-linking.com</string>
+		<string>applinks:deeplinking-miscelaneos-webapp.firebaseapp.com</string>
 	</array>
 	<key>com.apple.security.app-sandbox</key>
 	<true/>	
