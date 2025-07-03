@@ -11,5 +11,5 @@ cd android
 ```
 ## iOS Test
 ```
-xcrun simctl openurl booted https://pokedex-deep-linking.com/pokedex/1/
+xcrun simctl openurl booted https://deeplinking-miscelaneos-webapp.firebaseapp.com/pokedex/1/
 ```
