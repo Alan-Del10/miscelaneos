@@ -2,6 +2,9 @@ PODS:
   - compassx (0.0.1):
     - Flutter
   - Flutter (1.0.0)
+  - local_auth_darwin (0.0.1):
+    - Flutter
+    - FlutterMacOS
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
@@ -15,6 +18,7 @@ PODS:
 DEPENDENCIES:
   - compassx (from `.symlinks/plugins/compassx/ios`)
   - Flutter (from `Flutter`)
+  - local_auth_darwin (from `.symlinks/plugins/local_auth_darwin/darwin`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
   - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
   - sensors_plus (from `.symlinks/plugins/sensors_plus/ios`)
@@ -25,6 +29,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/compassx/ios"
   Flutter:
     :path: Flutter
+  local_auth_darwin:
+    :path: ".symlinks/plugins/local_auth_darwin/darwin"
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
   permission_handler_apple:
@@ -37,6 +43,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   compassx: 6abaa865a6241ed744ad53aec8d9241c6719ec60
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  local_auth_darwin: fa4b06454df7df8e97c18d7ee55151c57e7af0de
   path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
   permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
   sensors_plus: 7229095999f30740798f0eeef5cd120357a8f4f2
