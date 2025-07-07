@@ -20,6 +20,7 @@ final menuItems = <MenuItem>[
   MenuItem('Location', Icons.pin_drop_outlined, '/location'),
   MenuItem('Map', Icons.map_outlined, '/map'),
   MenuItem('Controlled Map', Icons.control_camera_rounded, '/controlled-map'),
+  MenuItem('Badge', Icons.notifications_active, '/badge'),
 ];
 
 class MainMenu extends StatelessWidget {
