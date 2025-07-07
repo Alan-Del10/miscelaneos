@@ -9,3 +9,4 @@ export 'pokemons/pokemon_provider.dart';
 export 'local_auth/local_auth_provider.dart';
 export 'location/user_location_provider.dart';
 export 'location/watch_location_provider.dart';
+export 'location/map_controlled_provider.dart';
