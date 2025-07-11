@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:miscelaneos/config/config.dart';
@@ -25,10 +27,26 @@ class DbPokemonsScreen extends ConsumerWidget {
         actions: [
           IconButton(
             onPressed: () {
+              //Si deseas usar el iOSBackgroundTask nativo usamos este ifelse
+              /*if (Platform.isAndroid) {
+                Workmanager().registerOneOffTask(
+                  fetchBackgroudTaskKey,
+                  fetchBackgroudTaskKey,
+                  initialDelay: const Duration(seconds: 3),
+                  inputData: {'howMany': 30},
+                );
+              } else {
+                Workmanager().registerOneOffTask(
+                  Workmanager.iOSBackgroundTask,
+                  Workmanager.iOSBackgroundTask,
+                  initialDelay: const Duration(seconds: 30),
+                  inputData: {'howMany': 30},
+                );
+              }*/
               Workmanager().registerOneOffTask(
                 fetchBackgroudTaskKey,
                 fetchBackgroudTaskKey,
-                initialDelay: const Duration(seconds: 3),
+                initialDelay: const Duration(seconds: 30),
                 inputData: {'howMany': 30},
               );
             },

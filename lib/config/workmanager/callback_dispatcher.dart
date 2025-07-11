@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:miscelaneos/infrastructure/infrastructure.dart';
 import 'package:workmanager/workmanager.dart';
 
@@ -19,6 +21,10 @@ void callbackDispatcher() {
         await loadNextPokemon();
         break;
       case Workmanager.iOSBackgroundTask:
+        await loadNextPokemon();
+
+        stderr.writeln("The iOS background fetch was triggered");
+
         print('Workmanager.iOSBackgroundTask');
       default:
     }

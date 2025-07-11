@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:miscelaneos/config/config.dart';
 import 'package:workmanager/workmanager.dart';
@@ -28,7 +30,12 @@ class BackgroundFetchsNotifier extends StateNotifier<bool?> {
   }
 
   deactivateTask() async {
-    await Workmanager().cancelByTag(processKeyName);
+    if (Platform.isAndroid) {
+      await Workmanager().cancelByTag(processKeyName);
+    } else {
+      await Workmanager().cancelAll();
+    }
+
     await SharedPreferencesPlugin.setBool(processKeyName, false);
     state = false;
   }
