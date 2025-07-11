@@ -16,6 +16,7 @@ final menuItems = <MenuItem>[
   MenuItem('Giróscopio Ball', Icons.sports_basketball, '/gyroscope-ball'),
   MenuItem('Brújula', Icons.explore, '/compass'),
   MenuItem('Pokedex', Icons.catching_pokemon, '/pokedex'),
+  MenuItem('Background Process', Icons.storage_rounded, '/db-pokemons'),
   MenuItem('Biometrics', Icons.fingerprint, '/biometrics'),
   MenuItem('Location', Icons.pin_drop_outlined, '/location'),
   MenuItem('Map', Icons.map_outlined, '/map'),

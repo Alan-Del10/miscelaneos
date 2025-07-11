@@ -23,3 +23,8 @@ https://console.cloud.google.com/google/maps-hosted/build?inv=1&invt=Ab193A&proj
 https://developers.google.com/admob/flutter/quick-start#android
 https://admob.google.com/
 ```
+##Generado de código 
+```
+dart run build_runner build
+dart run build_runner watch. //auto
+```
