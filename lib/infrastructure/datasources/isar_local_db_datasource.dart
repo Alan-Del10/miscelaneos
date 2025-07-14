@@ -21,7 +21,7 @@ class IsarLocalDbDatasource extends LocalDbDatasource {
   @override
   Future<void> insertPokemon(Pokemon pokemon) async {
     final isar = await db;
-    final done = isar.writeTxnSync(() => isar.pokemons.putSync(pokemon));
+    isar.writeTxnSync(() => isar.pokemons.putSync(pokemon));
   }
 
   @override

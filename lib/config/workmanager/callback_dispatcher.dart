@@ -24,8 +24,6 @@ void callbackDispatcher() {
         await loadNextPokemon();
 
         stderr.writeln("The iOS background fetch was triggered");
-
-        print('Workmanager.iOSBackgroundTask');
       default:
     }
 
@@ -46,7 +44,6 @@ Future loadNextPokemon() async {
     if (pokemon == null) throw message;
 
     await localDbRepository.insertPokemon(pokemon);
-    print('pokemon listo ');
   } catch (e) {
     rethrow;
   }
